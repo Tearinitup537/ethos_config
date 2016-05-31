@@ -1,4 +1,4 @@
-maxgputemp 85
+maxgputemp 90
 stratumproxy enabled
 proxywallet 0x5dFC452EB6DbC5E10B3Ef9227270c655918cb6F8
 proxypool1 us1.ethermine.org:4444
@@ -8,10 +8,10 @@ flags --farm-recheck 200 --cl-global-work 32768
 #globalfan 75
 
 #BTC PRO 1
-pwr 180584 20 20 20 20 20
-cor 180584 1010 1010 1010 1010 1010
+pwr 180584 0 0 0 0 0
+#cor 180584 1010 1010 1010 1010 1010
 mem 180584 1500 1500 1500 1500 1500
-fan 180584 75 75 65 55 55
+#fan 180584 75 75 65 55 55
 #reb 180584 0
 
 #BTC PRO #3
