@@ -7,6 +7,29 @@ proxypool3 eth-us.dwarfpool.com:8008
 flags --farm-recheck 200 --cl-global-work 32768
 #globalfan 75
 
+#BTC PRO 1 3x7990
+pwr 1805b0 20 20 20 20 20 20
+#cor 1805b0 1120 1120 1120 1120 1120
+#mem 1805b0 1500 1500 1500 1500 1500
+#fan 1805b0 75 75 75 75 75
+#reb 1805b0 0
+
+#BTC AMD 3 x 290
+pwr 2f9e5f 50 50 50
+cor 2f9e5f 950 950 950
+mem 2f9e5f 1250 1250 1250 
+fan 2f9e5f 75 75 75
+#reb 2f9e5f 0
+mxt 2f9e5f 90
+loc 2f9e5f UP01
+
+# 5x280 84a5ed
+pwr 84a5ed 20 20 20 20 20 20
+cor 84a5ed 1000 1000 1000 1000 1000
+#mem 84a5ed 1450 1450 1450 1450 1450
+#fan 84a5ed 75 75 75 75 75
+#reb 84a5ed 0
+
 #BTC PRO 1
 pwr 180584 0 0 0 0 0
 cor 180584 800 800 800 800 800
