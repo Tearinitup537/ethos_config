@@ -1,6 +1,9 @@
 maxgputemp 85
 stratumproxy enabled
+#home wallet
 #proxywallet 0x7cF253855a38218318c8daf010460fDC0BC58E86
+
+#shapeshift to cash wallet
 proxywallet 0xcb14da811f0b812a0932E44F8e456D3a223f42d4
 proxypool1 us1.ethermine.org:4444
 proxypool2 us2.ethermine.org:4444
