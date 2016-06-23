@@ -1,4 +1,4 @@
-maxgputemp 90
+maxgputemp 85
 stratumproxy enabled
 proxywallet 0x5dFC452EB6DbC5E10B3Ef9227270c655918cb6F8
 proxypool1 us1.ethermine.org:4444
@@ -6,11 +6,13 @@ proxypool2 us2.ethermine.org:4444
 proxypool3 eth-us.dwarfpool.com:8008
 flags --farm-recheck 200 --cl-global-work 32768
 #globalfan 75
+autoreboot true
+custompanel bedfordfalls
 
 # 5x280 84a5ed
 pwr 84a5ed 20 20 20 20 20 20
-cor 84a5ed 1000 1000 1000 1000 1000
-#mem 84a5ed 1450 1450 1450 1450 1450
+cor 84a5ed 1050 1050 1050 1050 1050
+mem 84a5ed 1450 1450 1450 1450 1450
 #fan 84a5ed 75 75 75 75 75
 #reb 84a5ed 0
 
