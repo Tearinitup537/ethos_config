@@ -7,7 +7,6 @@ proxypool3 eth-us.dwarfpool.com:8008
 flags --farm-recheck 200 --cl-global-work 32768
 #globalfan 75
 autoreboot true
-custompanel bedfordfalls
 
 # 5x280 84a5ed
 pwr 84a5ed 20 20 20 20 20 20
