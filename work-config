@@ -1,0 +1,77 @@
+maxgputemp 85
+stratumproxy enabled
+proxywallet 0x5dFC452EB6DbC5E10B3Ef9227270c655918cb6F8
+proxypool1 us1.ethermine.org:4444
+proxypool2 us2.ethermine.org:4444
+proxypool3 eth-us.dwarfpool.com:8008
+flags --farm-recheck 200 --cl-global-work 32768
+#globalfan 75
+autoreboot true
+
+# 5x280 84a5ed
+pwr 84a5ed 20 20 20 20 20 20
+cor 84a5ed 1050 1050 1050 1050 1050
+mem 84a5ed 1450 1450 1450 1450 1450
+#fan 84a5ed 75 75 75 75 75
+#reb 84a5ed 0
+
+
+# EXAMPLES
+#
+# example config settings that apply to all rigs:
+#
+# maxgputemp 85
+# stratumproxy enabled
+# proxywallet 0x5eb6fd512408eef848a060d197e64b419d716bc7
+# proxypool1 us1.ethpool.org:3333
+# proxypool2 eu1.ethpool.org:3333
+# proxypool1 eth-us.dwarfpool.com:8008
+# proxypool2 eth-eu.dwarfpool.com:8008
+# flags --farm-recheck 200
+# globalfan 90
+#
+# example config settings that apply to individual rigs (and their respective individual GPUs):
+#
+# cor c94e13 950 950 950 950 950
+# mem c94e13 1250 1250 1250 1250 1250
+# fan c94e13 90 80 85 100 70
+# reb c94e13 1
+# cor a23def 970 1000 1100 980 1060
+# mem a23def 1250 1250 1500 1250 1500
+# fan a23def 100 100 70 60 90
+# reb a23def 1
+#
+# DOCUMENTATION
+#
+# If using "pool" parameter, write WORKER (a placeholder variable) in place of rig name (i.e. NOT rig1, myrig, home, warehouse2, etc).
+#
+# This global remote conf file (/home/ethos/remote) has been pulled into your local conf file (/home/ethos/local).
+# You can host your own remote conf and change the contents of the /home/ethos/remote file.
+# There should only be one line in the /home/ethos/remote file: http://yourdomain.com/path/to/your/globalconf.txt
+# If you make the /home/ethos/remote file completely blank, then only the /home/ethos/local file will be used for settings.
+#
+# pool:		use this if you have a network proxy or to bypass this rig's local stratum proxy (if used, must always be on the first line of the config)
+# stratumproxy:	if enabled, you will bypass "pool" and connect to stratum proxy located on this rig
+# proxy wallet: the ethereum address to which this rig's proxy will mine (only used if stratumproxy is enabled)
+# proxypool1:	this rig's stratum proxy's first pool (only used if stratumproxy is enabled)
+# proxypool2:	this rig's stratum proxy's failover pool (only used if stratumproxy is enabled)
+# flags:	set desired ethminer flags here
+# maxgputemp:	the temperature in C that your GPUs will trigger ethminer to turn off
+# globalcore:	set the global core clock of all GPUs
+# globalmem: 	set the global mem clock of all GPUs
+# globalfan: 	set the fan speed percent of all GPUs
+#
+# Your WORKER names are assigned automatically by the OS, do not change them. They are 6-digit alphanumeric codes. 
+#
+# cor [worker]:	set the core clock of individual GPUs on a single rig, [worker] is the worker/rig name of the single rig as assigned by the OS.
+# mem [worker]:	set the core clock of individual GPUs on a single rig, [worker] is the worker/rig name of the single rig as assigend by the OS.
+# fan [worker]: set the fan speed of individual GPUs on a single rig, [worker] is the worker/rig name of the single rig as assigend by the OS.
+# reb [worker]:	increment this value (example: 4 becomes 5) and the single rig will automatically reboot within 10 minutes.
+#
+# AUTOMATIC REBOOT NOTES
+#
+# You are able to reboot remotely. Start with "1" (no quotes) to reboot a rig:
+#
+# reb a23def 1
+#
+# Then, if you want to reboot again, increment it to 2, then 3, then 4, etc etc (never skip any numbers).
