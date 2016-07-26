@@ -2,10 +2,10 @@ maxgputemp 85
 stratumproxy enabled
 
 #home wallet
-proxywallet 0x7cF253855a38218318c8daf010460fDC0BC58E86
+#proxywallet 0x7cF253855a38218318c8daf010460fDC0BC58E86
 
 #shapeshift to cash wallet
-#proxywallet 0xcb14da811f0b812a0932E44F8e456D3a223f42d4
+proxywallet 0xcb14da811f0b812a0932E44F8e456D3a223f42d4
 
 proxypool1 us1.ethermine.org:4444
 proxypool2 us2.ethermine.org:4444
@@ -15,19 +15,11 @@ flags --farm-recheck 200 --cl-global-work 32768
 autoreboot true
 
 #BTC PRO 1 3x7990
-pwr 1805b0 20 20 20 20 20 20
+#pwr 1805b0 20 20 20 20 20 20
 #cor 1805b0 1120 1120 1120 1120 1120
 #mem 1805b0 1500 1500 1500 1500 1500
 #fan 1805b0 75 75 75 75 75
 reb 1805b0 2
-
-#BTC AMD 2 x 290
-pwr 2f9e5f 50 50 
-cor 2f9e5f 950 950 
-mem 2f9e5f 1250 1250  
-fan 2f9e5f 100 100 
-reb 2f9e5f 2
-mxt 2f9e5f 90
 
 #BTC PRO 1
 #pwr 180584 0 0 0 0 0
